@@ -52,3 +52,12 @@ ALTER TABLE proprietario
 
 ALTER TABLE imovel
 	DROP COLUMN detalhes;
+	
+-- ex 09 Crie a coluna IdProprietario na tabela imovel e defina como uma fk da tabela proprietario.
+
+ALTER TABLE imovel
+	ADD COLUMN id_proprietario INT,
+	ADD CONSTRAINT id_proprietario_fk
+	FOREIGN KEY (id_proprietario)
+	REFERENCES proprietario(id);
+	  
