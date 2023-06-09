@@ -47,3 +47,8 @@ ALTER TABLE imovel
 
 ALTER TABLE proprietario
 	ADD COLUMN telefone VARCHAR(11);
+	
+-- ex 08 Crie o script para excluir a coluna detalhes, na tabela Imovel, utilizando o alter table.
+
+ALTER TABLE imovel
+	DROP COLUMN detalhes;
