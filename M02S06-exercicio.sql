@@ -61,3 +61,7 @@ ALTER TABLE imovel
 	FOREIGN KEY (id_proprietario)
 	REFERENCES proprietario(id);
 	  
+-- ex 10 Crie o Script para excluir as tabelas proprietario e Imovel
+DROP TABLE
+	proprietario, 
+	imovel;
