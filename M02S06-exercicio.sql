@@ -26,3 +26,13 @@ CREATE TABLE imovel(
 );
 
 SELECT * FROM imovel;
+
+-- Crie a coluna id do tipo int, na tabela proprietario e defina como chave primaria (Primary Key)
+-- Pode ser tanto utilizando o alter table quanto excluindo a tabela proprietario e recriando ela já com a chave.
+
+ALTER TABLE proprietario
+	ADD COLUMN id INT PRIMARY KEY;
+
+SELECT * FROM proprietario;	
+
+
